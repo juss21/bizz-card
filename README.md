@@ -1,16 +1,14 @@
 # bizz_card
 
-A new Flutter project.
+A Flutter project. This is supposed to show personal/contact information for potential business partners.
 
-## Getting Started
+## How to run   
 
-This project is a starting point for a Flutter application.
+- `flutter run`
 
-A few resources to get you started if this is your first Flutter project:
+## Audit questions
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- [Bizz-card Audit questions](https://github.com/01-edu/public/tree/166a10990fd52772eb288a43da4e336226b6d4ea/subjects/mobile-dev/bizz-card/audit)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Author
+- [Juss](https://01.kood.tech/git/juss)

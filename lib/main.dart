@@ -23,7 +23,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-
 class Info extends StatelessWidget {
   final String inputString;
 
@@ -47,12 +46,13 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  
   //Set personal information string with font size 20
   Info age = const Info("23 years old");
   Info email = const Info("jussmartson21@gmail.com");
   Info tel = const Info("+372 56990615");
   Info extra = const Info("Waiting for your call ;)");
+  Info empty = const Info("");
+
 
   @override
   Widget build(BuildContext context) {
@@ -65,24 +65,36 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-
             //Profile picture
             const CircleAvatar(
               radius: 48,
-              backgroundImage: NetworkImage('https://01.kood.tech/git/avatars/565c6475af5a57a5ef5202227c288f5f?size=870'),
+              backgroundImage: NetworkImage(
+                  'https://01.kood.tech/git/avatars/565c6475af5a57a5ef5202227c288f5f?size=870'),
             ),
-            
-            //First and Last name
-            const Text(
-              'Juss Märtson',
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
-            ),
-
-            //Rest of the personal information
-            age,
-            email,
-            tel,
-            extra,
+            Container(
+              padding: const EdgeInsets.all(30.0),
+              decoration: BoxDecoration(
+                color: Colors.grey,
+                borderRadius:
+                    BorderRadius.circular(10.0), // Adjust the radius as needed
+              ),
+              
+              // Set the background color here
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  // First and Last name
+                  const Text(
+                    'Juss Märtson',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+                  ),
+                  age,
+                  email,
+                  tel,
+                  extra,
+                ],
+              ),
+            )
           ],
         ),
       ),
