@@ -51,7 +51,6 @@ class _MyHomePageState extends State<MyHomePage> {
   Info email = const Info("jussmartson21@gmail.com");
   Info tel = const Info("+372 56990615");
   Info extra = const Info("Waiting for your call ;)");
-  Info empty = const Info("");
 
 
   @override
